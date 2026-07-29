@@ -1,325 +1,504 @@
-<!doctype html>
+<!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <meta
-      name="description"
-      content="Energy Ally is the operational platform for India's energy distribution businesses across LPG, petroleum, solar, and water."
-    />
-    <title>Energy Ally | Your Operational Partner</title>
-    <link rel="icon" type="image/svg+xml" href="favicon.svg" />
-    <link rel="preconnect" href="https://fonts.googleapis.com" />
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link
-      href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,500;9..144,700&family=Manrope:wght@400;500;600;700&display=swap"
-      rel="stylesheet"
-    />
-    <link rel="stylesheet" href="styles.css" />
-  </head>
-  <body>
-    <div class="cursor-glow" aria-hidden="true"></div>
-    <div class="ambient ambient-left"></div>
-    <div class="ambient ambient-right"></div>
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>EnergyAlly | Your Operational Partner</title>
+<meta name="description" content="EnergyAlly is the operational platform for India's energy distribution businesses across LPG, petroleum, solar, and water.">
+<meta property="og:title" content="EnergyAlly | Your Operational Partner">
+<meta property="og:description" content="Run stock, delivery, sales, and teams off one manifest. Built for LPG, petroleum, solar, and water distributors.">
+<meta property="og:image" content="assets/images/logo.png">
+<meta property="og:type" content="website">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Oswald:wght@400;500;600;700&family=IBM+Plex+Sans:wght@400;500;600;700&family=IBM+Plex+Mono:wght@400;500;600;700&display=swap" rel="stylesheet">
 
-    <header class="site-header">
-      <a class="logo" href="#top" aria-label="Energy Ally home">
-        <img src="logo-energyally-alt-a.svg" alt="Energy Ally" />
-      </a>
-      <nav class="site-nav">
-        <a href="#solution">Solution</a>
-        <a href="#ops-live">Ops Live</a>
-        <a href="#vertical-widget">Verticals</a>
-        <a href="#modules">Modules</a>
-        <a href="#pricing">Pricing</a>
-        <a href="#contact">Contact</a>
-      </nav>
-    </header>
+<!-- Favicons -->
+<link rel="icon" type="image/x-icon" href="assets/favicon/favicon.ico">
+<link rel="icon" type="image/png" sizes="16x16" href="assets/favicon/favicon-16x16.png">
+<link rel="icon" type="image/png" sizes="32x32" href="assets/favicon/favicon-32x32.png">
+<link rel="icon" type="image/png" sizes="48x48" href="assets/favicon/favicon-48x48.png">
+<link rel="apple-touch-icon" sizes="180x180" href="assets/favicon/apple-touch-icon.png">
+<link rel="icon" type="image/png" sizes="192x192" href="assets/favicon/android-chrome-192x192.png">
+<link rel="icon" type="image/png" sizes="512x512" href="assets/favicon/android-chrome-512x512.png">
+<link rel="manifest" href="assets/favicon/site.webmanifest">
+<meta name="theme-color" content="#0E1B1F">
 
-    <main id="top">
-      <section class="hero reveal">
+<!-- Stylesheet -->
+<link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+
+<header>
+  <nav>
+    <a href="#top" class="logo"><img src="assets/images/logo-icon.png" alt="EnergyAlly icon" class="logo-icon">EnergyAlly</a>
+    <div class="navlinks">
+      <a href="#solution">Solution</a>
+      <a href="#manifest">Ops Live</a>
+      <a href="#testimonials">Voices</a>
+      <a href="#verticals">Verticals</a>
+      <a href="#modules">Modules</a>
+      <a href="#pricing">Pricing</a>
+      <a href="#contact">Contact</a>
+    </div>
+    <div class="navcta">
+      <a href="#contact" class="btn btn-amber">Book a demo</a>
+    </div>
+  </nav>
+</header>
+
+<main id="top">
+
+  <!-- HERO -->
+  <section class="hero">
+    <div class="wrap hero-grid">
+      <div>
         <p class="eyebrow">The operating system for energy distribution</p>
-        <h1>Run LPG, petroleum, solar, and water operations on one platform.</h1>
-        <p class="hero-copy">
-          Energy Ally replaces paper registers, WhatsApp coordination, and disconnected sheets
-          with one role-aware system for stock, delivery, sales, attendance, teams, and customer
-          complaints.
-        </p>
+        <h1>Run stock, delivery,<br>sales, and teams off<br><span>one manifest.</span></h1>
+        <p>EnergyAlly replaces paper registers, WhatsApp coordination, and scattered
+        spreadsheets with a single role-aware system built for LPG, petroleum, solar,
+        and water distributors.</p>
         <div class="hero-actions">
-          <button class="btn btn-primary" id="open-demo-modal" type="button">Book a demo</button>
-          <a class="btn btn-secondary" href="#pricing">See pricing</a>
+          <a href="#contact" class="btn btn-amber">Book a demo</a>
+          <a href="#pricing" class="btn btn-outline">See pricing</a>
         </div>
-        <div class="hero-graph" aria-hidden="true">
-          <svg viewBox="0 0 760 180" preserveAspectRatio="none">
-            <defs>
-              <linearGradient id="heroLine" x1="0" y1="0" x2="1" y2="0">
-                <stop offset="0%" stop-color="#2bb673" />
-                <stop offset="100%" stop-color="#f3a200" />
-              </linearGradient>
-            </defs>
-            <path class="graph-grid" d="M0 150H760 M0 110H760 M0 70H760 M0 30H760" />
-            <polyline
-              class="graph-line"
-              points="20,140 120,128 220,132 320,98 420,106 520,74 620,82 740,40"
-            />
-            <g class="graph-dots">
-              <circle cx="120" cy="128" r="5" />
-              <circle cx="320" cy="98" r="5" />
-              <circle cx="520" cy="74" r="5" />
-              <circle cx="740" cy="40" r="6" />
-            </g>
-          </svg>
-        </div>
-        <div class="hero-kpis">
-          <article>
-            <p class="kpi-label">Potential addressable units</p>
-            <p class="kpi-value" data-counter="233500">0</p>
-          </article>
-          <article>
-            <p class="kpi-label">Target payback</p>
-            <p class="kpi-value" data-counter="3" data-suffix=" mo">0</p>
-          </article>
-          <article>
-            <p class="kpi-label">Typical gross margin</p>
-            <p class="kpi-value" data-counter="78" data-suffix="%">0</p>
-          </article>
-        </div>
-      </section>
+      </div>
 
-      <section class="ops-live reveal" id="ops-live">
-        <h2>Live operations pulse</h2>
-        <p>Sample live widget to show how Energy Ally gives teams a real-time operating view.</p>
-        <div class="ops-grid">
-          <article class="ops-card">
-            <p class="ops-label">Active routes now</p>
-            <p class="ops-value" id="ops-routes">18</p>
-            <div class="ops-bar"><span id="ops-routes-bar"></span></div>
-          </article>
-          <article class="ops-card">
-            <p class="ops-label">Orders in queue</p>
-            <p class="ops-value" id="ops-orders">62</p>
-            <div class="ops-bar"><span id="ops-orders-bar"></span></div>
-          </article>
-          <article class="ops-card">
-            <p class="ops-label">Stock variance alerts</p>
-            <p class="ops-value" id="ops-variance">4</p>
-            <div class="ops-bar"><span id="ops-variance-bar"></span></div>
-          </article>
-          <article class="ops-card">
-            <p class="ops-label">Complaints pending</p>
-            <p class="ops-value" id="ops-complaints">9</p>
-            <div class="ops-bar"><span id="ops-complaints-bar"></span></div>
-          </article>
+      <div class="console reveal">
+        <div class="console-head">
+          <span>Business case</span>
+          <span class="live"><i></i>Live estimate</span>
         </div>
-      </section>
-
-      <section class="problem reveal">
-        <h2>What slows distributors down today</h2>
-        <div class="problem-grid">
-          <article>
-            <h3>No delivery intelligence</h3>
-            <p>
-              Daily routes are manually coordinated. Priority orders get missed and there is no
-              reliable delivery trail.
-            </p>
-          </article>
-          <article>
-            <h3>Invisible revenue leakage</h3>
-            <p>
-              Missed or delayed cash memo capture creates reconciliation gaps and delayed visibility
-              into actual collections.
-            </p>
-          </article>
-          <article>
-            <h3>Stock blind spots</h3>
-            <p>
-              Portal data and physical counts are often out of sync, making it hard to act on
-              discrepancies quickly.
-            </p>
-          </article>
-        </div>
-      </section>
-
-      <section class="solution reveal" id="solution">
-        <h2>One platform. Every role. Every day.</h2>
-        <p>
-          Energy Ally is built for operational teams, owners, managers, and field staff with
-          permission-based access and workflows that match real distribution businesses.
-        </p>
-        <div class="solution-strip">
-          <span>Portal sync + AI stock reconciliation</span>
-          <span>AI route planning and dispatch</span>
-          <span>Daily sales register and settlement tracking</span>
-          <span>Attendance, leave, and employee onboarding</span>
-        </div>
-      </section>
-
-      <section class="modules reveal" id="modules">
-        <h2>Core modules</h2>
-        <div class="module-grid">
-          <article>
-            <h3>Stock Management</h3>
-            <p>Portal sync, discrepancy analysis, and quick corrective actions.</p>
-          </article>
-          <article>
-            <h3>Delivery Planning</h3>
-            <p>AI-assisted routing by zone, order priority, and dispatch readiness.</p>
-          </article>
-          <article>
-            <h3>Daily Sales</h3>
-            <p>Structured register with settlements and date-wise record management.</p>
-          </article>
-          <article>
-            <h3>Attendance</h3>
-            <p>Daily marking, calendar views, and leave scheduling in one place.</p>
-          </article>
-          <article>
-            <h3>Employees</h3>
-            <p>India-ready onboarding with role assignment and permission controls.</p>
-          </article>
-          <article>
-            <h3>Complaints</h3>
-            <p>Track, assign, and resolve customer issues with accountability.</p>
-          </article>
-        </div>
-      </section>
-
-      <section class="verticals reveal">
-        <h2>Built for multiple energy verticals</h2>
-        <p>
-          Start with LPG and expand into petroleum, solar, and water workflows through
-          configuration, not custom rebuilds.
-        </p>
-        <div class="pill-row">
-          <span>LPG</span>
-          <span>Petroleum</span>
-          <span>Solar</span>
-          <span>Water</span>
-        </div>
-      </section>
-
-      <section class="vertical-widget reveal" id="vertical-widget">
-        <h2>Interactive vertical playbook</h2>
-        <p>Switch sectors to preview how workflows and data models adapt instantly.</p>
-        <div class="widget-shell">
-          <div class="sector-tabs" role="tablist" aria-label="Sector selection">
-            <button class="sector-tab is-active" data-sector="lpg" role="tab">LPG</button>
-            <button class="sector-tab" data-sector="petroleum" role="tab">Petroleum</button>
-            <button class="sector-tab" data-sector="solar" role="tab">Solar</button>
-            <button class="sector-tab" data-sector="water" role="tab">Water</button>
+        <div class="gauges">
+          <div class="gauge">
+            <svg viewBox="0 0 120 68" data-gauge data-value="72" data-suffix="+" data-display="45,000">
+              <path d="M10,60 A50,50 0 0 1 110,60" fill="none" stroke="#1E3B41" stroke-width="8"/>
+              <path class="fill-arc" d="M10,60 A50,50 0 0 1 110,60" fill="none" stroke="#F4A83C" stroke-width="8" stroke-linecap="round" stroke-dasharray="157" stroke-dashoffset="157"/>
+              <circle cx="60" cy="60" r="3.5" fill="#8FA0A3"/>
+              <line class="needle" x1="60" y1="60" x2="60" y2="18" stroke="#EDE7DA" stroke-width="2" transform="rotate(-90 60 60)"/>
+            </svg>
+            <div class="gauge-val">45,000+</div>
+            <div class="gauge-label">Addressable<br>units</div>
           </div>
-          <article class="sector-panel" id="sector-panel" aria-live="polite">
-            <h3 class="sector-title">LPG distribution workflow</h3>
-            <p class="sector-copy">
-              Cylinder-first stock logic, refill routes, priority household delivery, and register
-              reconciliation built for day-end closure.
-            </p>
-            <div class="sector-meta">
-              <span><strong>Admin role:</strong> Proprietor</span>
-              <span><strong>Stock unit:</strong> Cylinder</span>
-              <span><strong>Delivery model:</strong> Refill delivery</span>
+          <div class="gauge">
+            <svg viewBox="0 0 120 68" data-gauge data-value="48" data-display="11 mo">
+              <path d="M10,60 A50,50 0 0 1 110,60" fill="none" stroke="#1E3B41" stroke-width="8"/>
+              <path class="fill-arc" d="M10,60 A50,50 0 0 1 110,60" fill="none" stroke="#F4A83C" stroke-width="8" stroke-linecap="round" stroke-dasharray="157" stroke-dashoffset="157"/>
+              <circle cx="60" cy="60" r="3.5" fill="#8FA0A3"/>
+              <line class="needle" x1="60" y1="60" x2="60" y2="18" stroke="#EDE7DA" stroke-width="2" transform="rotate(-90 60 60)"/>
+            </svg>
+            <div class="gauge-val">11 mo</div>
+            <div class="gauge-label">Target<br>payback</div>
+          </div>
+          <div class="gauge">
+            <svg viewBox="0 0 120 68" data-gauge data-value="61" data-display="32%">
+              <path d="M10,60 A50,50 0 0 1 110,60" fill="none" stroke="#1E3B41" stroke-width="8"/>
+              <path class="fill-arc" d="M10,60 A50,50 0 0 1 110,60" fill="none" stroke="#F4A83C" stroke-width="8" stroke-linecap="round" stroke-dasharray="157" stroke-dashoffset="157"/>
+              <circle cx="60" cy="60" r="3.5" fill="#8FA0A3"/>
+              <line class="needle" x1="60" y1="60" x2="60" y2="18" stroke="#EDE7DA" stroke-width="2" transform="rotate(-90 60 60)"/>
+            </svg>
+            <div class="gauge-val">32%</div>
+            <div class="gauge-label">Typical gross<br>margin</div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- LIVE MANIFEST (signature element) -->
+  <section class="manifest-section" id="manifest">
+    <div class="wrap">
+      <div class="section-head">
+        <p class="eyebrow">Ops Live</p>
+        <h2>The register, digitized</h2>
+        <p>This is a sample of the live manifest your team sees every day — routes,
+        orders, stock, and complaints, entered once and visible to everyone with
+        permission to see it.</p>
+      </div>
+
+      <div class="ledger reveal">
+        <div class="ledger-top">
+          <div>
+            <div class="ledger-title">Daily operations manifest</div>
+            <div class="ledger-sub">Auto-updated · sample distributor account</div>
+          </div>
+          <div class="stamp">Live</div>
+        </div>
+        <div class="ledger-rows">
+          <div class="ledger-row">
+            <div class="ledger-num" data-count="18">0</div>
+            <div class="ledger-label">Active routes now</div>
+          </div>
+          <div class="ledger-row">
+            <div class="ledger-num" data-count="62">0</div>
+            <div class="ledger-label">Orders in queue</div>
+          </div>
+          <div class="ledger-row">
+            <div class="ledger-num" data-count="4">0<span class="flag">⚑</span></div>
+            <div class="ledger-label">Stock variance alerts</div>
+          </div>
+          <div class="ledger-row">
+            <div class="ledger-num" data-count="9">0<span class="flag">⚑</span></div>
+            <div class="ledger-label">Complaints pending</div>
+          </div>
+        </div>
+        <div class="ledger-foot">Entries reconcile automatically across stock, delivery, and sales — no double entry.</div>
+      </div>
+    </div>
+  </section>
+
+  <!-- PAIN POINTS -->
+  <section id="solution">
+    <div class="wrap">
+      <div class="section-head">
+        <p class="eyebrow">Why teams switch</p>
+        <h2>What slows distributors<br>down today</h2>
+      </div>
+      <div class="tickets">
+        <div class="ticket reveal">
+          <div class="ticket-num">ISSUE / 01</div>
+          <h3>No delivery intelligence</h3>
+          <p>Routes get coordinated by hand every morning. Priority orders slip through,
+          and there's no reliable trail once a cylinder or drum leaves the depot.</p>
+        </div>
+        <div class="ticket reveal">
+          <div class="ticket-num">ISSUE / 02</div>
+          <h3>Invisible revenue leakage</h3>
+          <p>Cash memos get captured late or not at all, which opens reconciliation gaps
+          and delays real visibility into what's actually been collected.</p>
+        </div>
+        <div class="ticket reveal">
+          <div class="ticket-num">ISSUE / 03</div>
+          <h3>Stock blind spots</h3>
+          <p>Portal data and the physical count drift apart. By the time someone notices,
+          the discrepancy is already too old to act on quickly.</p>
+        </div>
+        <div class="ticket reveal">
+          <div class="ticket-num">ISSUE / 04</div>
+          <h3>Attendance and payroll disputes</h3>
+          <p>Attendance tracked on paper or over the phone leaves no clean record —
+          which means payroll disputes and nothing to point to for compliance.</p>
+        </div>
+        <div class="ticket reveal">
+          <div class="ticket-num">ISSUE / 05</div>
+          <h3>Complaints with no owner</h3>
+          <p>Customer complaints get logged in a notebook or a phone call and then
+          nowhere else, so nobody's accountable for how long resolution takes.</p>
+        </div>
+        <div class="ticket reveal">
+          <div class="ticket-num">ISSUE / 06</div>
+          <h3>Delayed P&amp;L visibility</h3>
+          <p>Margins and location performance surface weeks later, once someone
+          manually pulls numbers together from stock, sales, and cash records.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ROLES -->
+  <section>
+    <div class="wrap">
+      <div class="section-head">
+        <p class="eyebrow">One platform, every role</p>
+        <h2>Built for how your team<br>actually works</h2>
+        <p>Owners, managers, and field staff each see exactly what their role needs —
+        nothing more, nothing hidden.</p>
+      </div>
+      <div class="roles">
+        <div class="role-card reveal">
+          <span class="role-badge">Owner</span>
+          <h3>Full visibility, every location</h3>
+          <ul class="chip-list">
+            <li>Portal sync + AI stock reconciliation</li>
+            <li>Cross-location performance in one view</li>
+            <li>Tally XML export for accounting</li>
+          </ul>
+        </div>
+        <div class="role-card reveal">
+          <span class="role-badge">Manager</span>
+          <h3>Daily control of routes and register</h3>
+          <ul class="chip-list">
+            <li>AI route planning and dispatch</li>
+            <li>Daily sales register with settlements</li>
+            <li>Attendance, leave, and onboarding</li>
+          </ul>
+        </div>
+        <div class="role-card reveal">
+          <span class="role-badge">Field staff</span>
+          <h3>Simple, mobile, no paperwork</h3>
+          <ul class="chip-list">
+            <li>Today's route on a phone screen</li>
+            <li>One-tap delivery and complaint updates</li>
+            <li>Attendance marked from the field</li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- TESTIMONIALS -->
+  <section id="testimonials">
+    <div class="wrap">
+      <div class="section-head">
+        <p class="eyebrow">From the field</p>
+        <h2>What distributors<br>are saying</h2>
+      </div>
+      <div class="testimonials">
+        <div class="testimonial reveal">
+          <div class="testimonial-mark">&ldquo;</div>
+          <p class="testimonial-quote">Stock reconciliation used to eat two hours every evening.
+          Now the variance report is waiting for me before I lock up.</p>
+          <div class="testimonial-meta">
+            <span class="testimonial-name">Ramesh Iyer</span>
+            <span class="testimonial-role">Proprietor, Trichy · LPG</span>
+          </div>
+        </div>
+        <div class="testimonial reveal">
+          <div class="testimonial-mark">&ldquo;</div>
+          <p class="testimonial-quote">Field staff stopped calling for route confirmations.
+          They open the app in the morning and know exactly where to go.</p>
+          <div class="testimonial-meta">
+            <span class="testimonial-name">Priya Shankar</span>
+            <span class="testimonial-role">Operations Manager, Coimbatore · Petroleum</span>
+          </div>
+        </div>
+        <div class="testimonial reveal">
+          <div class="testimonial-mark">&ldquo;</div>
+          <p class="testimonial-quote">Complaints don't get lost between three different phone
+          numbers anymore. Everything's assigned and tracked in one place.</p>
+          <div class="testimonial-meta">
+            <span class="testimonial-name">Vignesh Kumar</span>
+            <span class="testimonial-role">Franchise Owner, Madurai · Solar</span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- MODULES -->
+  <section id="modules">
+    <div class="wrap">
+      <div class="section-head">
+        <p class="eyebrow">Core modules</p>
+        <h2>Nine modules. One record<br>of truth.</h2>
+      </div>
+      <div class="modules">
+        <div class="module reveal">
+          <span class="module-tag">01 · STOCK</span>
+          <h3>Stock Management</h3>
+          <p>Portal sync, discrepancy analysis, and quick corrective actions when counts don't match.</p>
+        </div>
+        <div class="module reveal">
+          <span class="module-tag">02 · DELIVERY</span>
+          <h3>Delivery Planning</h3>
+          <p>AI-assisted routing by zone, order priority, and dispatch readiness.</p>
+        </div>
+        <div class="module reveal">
+          <span class="module-tag">03 · SALES</span>
+          <h3>Daily Sales</h3>
+          <p>Structured register with settlements and date-wise record management.</p>
+        </div>
+        <div class="module reveal">
+          <span class="module-tag">04 · ATTENDANCE</span>
+          <h3>Attendance</h3>
+          <p>Daily marking, calendar views, and leave scheduling in one place.</p>
+        </div>
+        <div class="module reveal">
+          <span class="module-tag">05 · TEAM</span>
+          <h3>Employees</h3>
+          <p>India-ready onboarding with role assignment and permission controls.</p>
+        </div>
+        <div class="module reveal">
+          <span class="module-tag">06 · SERVICE</span>
+          <h3>Complaints</h3>
+          <p>Track, assign, and resolve customer issues with a clear accountability trail.</p>
+        </div>
+        <div class="module reveal">
+          <span class="module-tag">07 · FINANCE</span>
+          <h3>Invoicing & Billing</h3>
+          <p>Generate GST-compliant invoices and cash memos straight from delivery records.</p>
+        </div>
+        <div class="module reveal">
+          <span class="module-tag">08 · REPORTS</span>
+          <h3>P&amp;L & Reports</h3>
+          <p>Real-time profit and loss, margin tracking, and location-wise performance reports.</p>
+        </div>
+        <div class="module reveal">
+          <span class="module-tag">09 · ACCOUNTING</span>
+          <h3>Accounting Sync</h3>
+          <p>Push settlements and stock movement straight into Tally — no manual re-entry.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- VERTICALS -->
+  <section id="verticals">
+    <div class="wrap">
+      <div class="section-head">
+        <p class="eyebrow">Built for multiple energy verticals</p>
+        <h2>Design by Configuration</h2>
+        <p>LPG, petroleum, solar, and water workflows are configuration changes,
+        not custom rebuilds. Switch below to preview how the workflow adapts.</p>
+      </div>
+
+      <div class="vert-switch" role="tablist" aria-label="Energy verticals">
+        <button class="vswitch-btn active" data-vert="lpg"><span class="valve"></span>LPG</button>
+        <button class="vswitch-btn" data-vert="petroleum"><span class="valve"></span>Petroleum</button>
+        <button class="vswitch-btn" data-vert="solar"><span class="valve"></span>Solar</button>
+        <button class="vswitch-btn" data-vert="water"><span class="valve"></span>Water</button>
+      </div>
+
+      <div class="vert-panel reveal" id="vert-panel">
+        <div>
+          <h3 id="vert-title">LPG distribution workflow</h3>
+          <p id="vert-desc">Cylinder-first stock logic, refill routes, priority household
+          delivery, and register reconciliation built for day-end closure.</p>
+        </div>
+        <div class="vert-meta">
+          <div><span>Admin role</span><span id="vert-admin">Proprietor</span></div>
+          <div><span>Stock unit</span><span id="vert-unit">Cylinder</span></div>
+          <div><span>Delivery model</span><span id="vert-delivery">Refill delivery</span></div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- PRICING -->
+  <section id="pricing">
+    <div class="wrap">
+      <div class="section-head">
+        <p class="eyebrow">Simple monthly pricing</p>
+        <h2>No setup fee. First<br>30 days free.</h2>
+      </div>
+
+      <div class="price-toggle">
+        <button data-cycle="monthly">Monthly</button>
+        <button class="active" data-cycle="yearly">Yearly</button>
+      </div>
+
+      <div class="plans">
+        <div class="plan reveal">
+          <span class="plan-name">Starter</span>
+          <p class="plan-tagline">Best for teams up to 3 staff</p>
+          <div class="plan-price">
+            <span class="full-price" data-yearly-full="₹2,388" data-monthly-full="">₹2,388</span>
+            <span class="amt" data-monthly="199" data-yearly="1,999">₹1,999</span><span class="per" data-monthly-per="/month" data-yearly-per="/year">/year</span>
+          </div>
+          <div class="plan-save" data-monthly-save="" data-yearly-save="Save 16% billed yearly">Save 16% billed yearly</div>
+          <div class="plan-gauge"><i style="width:30%"></i></div>
+          <ul>
+            <li>Stock, attendance, and complaints</li>
+            <li>2 user seats</li>
+          </ul>
+          <a href="#contact" class="btn btn-outline">Book a demo</a>
+        </div>
+        <div class="plan featured reveal">
+          <span class="plan-name" style="color:var(--amber)">Professional</span>
+          <p class="plan-tagline">Best for growing operations</p>
+          <div class="plan-price">
+            <span class="full-price" data-yearly-full="₹5,988" data-monthly-full="">₹5,988</span>
+            <span class="amt" data-monthly="499" data-yearly="4,999">₹4,999</span><span class="per" data-monthly-per="/month" data-yearly-per="/year">/year</span>
+          </div>
+          <div class="plan-save" data-monthly-save="" data-yearly-save="Save 16% billed yearly">Save 16% billed yearly</div>
+          <div class="plan-gauge"><i style="width:65%"></i></div>
+          <ul>
+            <li>AI delivery planning + daily sales</li>
+            <li>Unlimited users and mobile access</li>
+          </ul>
+          <a href="#contact" class="btn btn-amber">Book a demo</a>
+        </div>
+        <div class="plan reveal">
+          <span class="plan-name">Enterprise</span>
+          <p class="plan-tagline">Best for multi-location businesses</p>
+          <div class="plan-price">
+            <span class="full-price" data-yearly-full="₹15,588" data-monthly-full="">₹15,588</span>
+            <span class="amt" data-monthly="1,299" data-yearly="12,999">₹12,999</span><span class="per" data-monthly-per="/month" data-yearly-per="/year">/year</span>
+          </div>
+          <div class="plan-save" data-monthly-save="" data-yearly-save="Save 17% billed yearly">Save 17% billed yearly</div>
+          <div class="plan-gauge"><i style="width:100%"></i></div>
+          <ul>
+            <li>API access and Tally XML export</li>
+            <li>Priority support</li>
+          </ul>
+          <a href="#contact" class="btn btn-outline">Book a demo</a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- CONTACT -->
+  <section class="contact-section on-light" id="contact" style="background:var(--panel-2); color:var(--white);">
+    <div class="wrap">
+      <div class="section-head" style="color:var(--white);">
+        <p class="eyebrow">Contact</p>
+        <h2 style="color:var(--white);">Schedule your walkthrough</h2>
+      </div>
+      <div class="contact-grid">
+        <div>
+          <div class="contact-item">
+            <span>Phone</span>
+            <strong><a href="tel:+919500806995">+91 95008 06995</a></strong>
+          </div>
+          <div class="contact-item">
+            <span>Email</span>
+            <strong><a href="mailto:sales@energyally.in">sales@energyally.in</a></strong>
+          </div>
+          <div class="contact-item">
+            <span>Address</span>
+            <strong>14, Bay View Street, Sholinganallur, Chennai 600119</strong>
+          </div>
+          <div class="contact-item">
+            <span>Working hours</span>
+            <strong>Monday to Saturday, 9:00 AM – 7:00 PM IST</strong>
+          </div>
+
+          <div class="contact-item">
+            <span>Follow EnergyAlly</span>
+            <div class="social-links">
+              <a href="https://facebook.com/energyally" aria-label="EnergyAlly on Facebook" target="_blank" rel="noopener">
+                <svg width="17" height="17" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M14 9h3V5h-3c-2.2 0-4 1.8-4 4v3H7v4h3v7h4v-7h3l1-4h-4V9c0-.6.4-1 1-1z"/></svg>
+              </a>
+              <a href="https://instagram.com/energyally" aria-label="EnergyAlly on Instagram" target="_blank" rel="noopener">
+                <svg width="17" height="17" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="3" y="3" width="18" height="18" rx="5"/><circle cx="12" cy="12" r="4"/><circle cx="17.5" cy="6.5" r="1" fill="currentColor" stroke="none"/></svg>
+              </a>
+              <a href="https://linkedin.com/company/energyally" aria-label="EnergyAlly on LinkedIn" target="_blank" rel="noopener">
+                <svg width="17" height="17" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="3" y="3" width="18" height="18" rx="2"/><line x1="8" y1="11" x2="8" y2="16"/><circle cx="8" cy="7.5" r="1" fill="currentColor" stroke="none"/><path d="M12 16v-3.2c0-1.5 1-2.3 2.2-2.3s1.8.8 1.8 2.3V16"/></svg>
+              </a>
+              <a href="https://x.com/energyally" aria-label="EnergyAlly on X" target="_blank" rel="noopener">
+                <svg width="15" height="15" viewBox="0 0 24 24" fill="currentColor" stroke="none"><path d="M18.9 2H22l-7.6 8.7L23.3 22h-7.1l-5.5-7.2L4.3 22H1.2l8.1-9.3L1 2h7.3l5 6.6L18.9 2zm-1.2 18h1.9L7.4 4H5.4l12.3 16z"/></svg>
+              </a>
             </div>
-          </article>
+          </div>
         </div>
-      </section>
 
-      <section class="pricing reveal" id="pricing">
-        <h2>Simple monthly pricing</h2>
-        <p>Monthly billing, no setup fee, and first 30 days free.</p>
-        <div class="billing-toggle" role="group" aria-label="Billing period selector">
-          <button class="toggle-btn active" data-billing="monthly">Monthly</button>
-          <button class="toggle-btn" data-billing="annual">Annual (save 15%)</button>
-        </div>
-        <div class="pricing-grid">
-          <article class="price-card">
-            <h3>Starter</h3>
-            <p class="price" data-monthly="1999" data-annual="1699">INR 1,999<span>/month</span></p>
-            <ul>
-              <li>Best for teams up to 3 staff</li>
-              <li>Stock, attendance, and complaints</li>
-              <li>2 user seats</li>
-            </ul>
-          </article>
-          <article class="price-card featured">
-            <h3>Professional</h3>
-            <p class="price" data-monthly="4999" data-annual="4249">INR 4,999<span>/month</span></p>
-            <ul>
-              <li>Best for growing operations</li>
-              <li>AI delivery planning + daily sales</li>
-              <li>Unlimited users and mobile access</li>
-            </ul>
-          </article>
-          <article class="price-card">
-            <h3>Enterprise</h3>
-            <p class="price" data-monthly="12999" data-annual="11049">INR 12,999<span>/month</span></p>
-            <ul>
-              <li>Best for multi-location businesses</li>
-              <li>API access and Tally XML export</li>
-              <li>Priority support</li>
-            </ul>
-          </article>
-        </div>
-      </section>
-
-      <section class="contact reveal" id="contact">
-        <h2>Contact</h2>
-        <p>Reach us directly to schedule your product walkthrough.</p>
-        <div class="contact-card">
-          <p><strong>Phone:</strong> +91 95662 38695</p>
-          <p><strong>Email:</strong> tech.energyally@gmail.com</p>
-          <p><strong>Address:</strong> 14, Bay View Street, Sholinganallur, Chennai 600119</p>
-          <p><strong>Working hours:</strong> Monday to Saturday, 9:00 AM to 7:00 PM IST</p>
-        </div>
-      </section>
-    </main>
-
-    <footer>
-      <p>Energy Ally | Your Operational Partner</p>
-    </footer>
-
-    <div class="modal-backdrop" id="demo-modal" aria-hidden="true">
-      <div class="modal-panel" role="dialog" aria-modal="true" aria-labelledby="demo-title">
-        <button class="modal-close" id="close-demo-modal" type="button" aria-label="Close">
-          x
-        </button>
-        <h2 id="demo-title">Book Your Demo</h2>
-        <p>Share your details and we will contact you shortly.</p>
-        <form id="demo-form" class="demo-form">
-          <label>
-            Full name (required)
-            <input type="text" name="name" required />
-          </label>
-          <label>
-            Business phone (email or phone required)
-            <input type="tel" name="phone" />
-          </label>
-          <label>
-            Work email (email or phone required)
-            <input type="email" name="email" />
-          </label>
-          <label>
-            Sector
-            <select name="sector" required>
-              <option value="LPG">LPG</option>
-              <option value="Petroleum">Petroleum</option>
-              <option value="Solar">Solar</option>
-              <option value="Water">Water</option>
+        <form class="demo-form" onsubmit="event.preventDefault(); this.querySelector('button').textContent='Request sent';">
+          <h3>Book your demo</h3>
+          <input type="text" placeholder="Full name" required>
+          <div class="form-row">
+            <input type="tel" placeholder="Business phone">
+            <input type="email" placeholder="Work email">
+          </div>
+          <div class="form-row">
+            <select>
+              <option>LPG</option>
+              <option>Petroleum</option>
+              <option>Solar</option>
+              <option>Water</option>
             </select>
-          </label>
-          <label>
-            Team size
-            <input type="text" name="teamSize" placeholder="e.g. 10 staff" />
-          </label>
-          <label>
-            Notes
-            <textarea name="notes" rows="3" placeholder="Current workflow, issues, timelines"></textarea>
-          </label>
-          <button class="btn btn-primary" type="submit">Submit Demo Request</button>
-          <p id="demo-form-message" class="form-message" aria-live="polite"></p>
+            <input type="text" placeholder="Team size">
+          </div>
+          <textarea rows="3" placeholder="Notes"></textarea>
+          <button type="submit" class="btn btn-amber">Submit demo request</button>
         </form>
       </div>
     </div>
+  </section>
 
-    <script src="script.js"></script>
-  </body>
+  <footer>EnergyAlly — Your Operational Partner. © 2026.</footer>
+
+</main>
+
+
+<script src="js/main.js"></script>
+</body>
 </html>
