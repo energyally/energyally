@@ -1,4 +1,26 @@
-// Scrollspy — underline nav link for section currently in view
+  // Theme: light by default, with the visitor's explicit choice remembered.
+  const root = document.documentElement;
+  const themeToggle = document.querySelector('.theme-toggle');
+  const themeMeta = document.querySelector('meta[name="theme-color"]');
+  const savedTheme = localStorage.getItem('energyally-theme');
+  const initialTheme = savedTheme === 'dark' ? 'dark' : 'light';
+
+  function setTheme(theme){
+    const isDark = theme === 'dark';
+    root.dataset.theme = theme;
+    themeToggle.setAttribute('aria-pressed', String(isDark));
+    themeToggle.setAttribute('aria-label', isDark ? 'Switch to light theme' : 'Switch to dark theme');
+    themeMeta.setAttribute('content', isDark ? '#071536' : '#F7FBFC');
+  }
+
+  setTheme(initialTheme);
+  themeToggle.addEventListener('click', ()=>{
+    const nextTheme = root.dataset.theme === 'dark' ? 'light' : 'dark';
+    setTheme(nextTheme);
+    localStorage.setItem('energyally-theme', nextTheme);
+  });
+
+  // Scrollspy — underline nav link for section currently in view
   const navLinks = document.querySelectorAll('.navlinks a');
   const spySections = Array.from(navLinks)
     .map(link => document.querySelector(link.getAttribute('href')))

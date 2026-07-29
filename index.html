@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" data-theme="light">
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -7,10 +7,10 @@
 <meta name="description" content="EnergyAlly is the operational platform for India's energy distribution businesses across LPG, petroleum, solar, and water.">
 <meta property="og:title" content="EnergyAlly | Your Operational Partner">
 <meta property="og:description" content="Run stock, delivery, sales, and teams off one manifest. Built for LPG, petroleum, solar, and water distributors.">
-<meta property="og:image" content="assets/images/logo.png">
+<meta property="og:image" content="assets/images/logo-mark.png">
 <meta property="og:type" content="website">
 <link rel="preconnect" href="https://fonts.googleapis.com">
-<link href="https://fonts.googleapis.com/css2?family=Oswald:wght@400;500;600;700&family=IBM+Plex+Sans:wght@400;500;600;700&family=IBM+Plex+Mono:wght@400;500;600;700&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Oswald:wght@400;500;600;700&family=IBM+Plex+Sans:wght@400;500;600;700&family=IBM+Plex+Mono:wght@400;500;600;700&family=Montserrat:wght@600;700;800&display=swap" rel="stylesheet">
 
 <!-- Favicons -->
 <link rel="icon" type="image/x-icon" href="assets/favicon/favicon.ico">
@@ -21,7 +21,7 @@
 <link rel="icon" type="image/png" sizes="192x192" href="assets/favicon/android-chrome-192x192.png">
 <link rel="icon" type="image/png" sizes="512x512" href="assets/favicon/android-chrome-512x512.png">
 <link rel="manifest" href="assets/favicon/site.webmanifest">
-<meta name="theme-color" content="#0E1B1F">
+<meta name="theme-color" content="#F7FBFC">
 
 <!-- Stylesheet -->
 <link rel="stylesheet" href="css/styles.css">
@@ -30,7 +30,13 @@
 
 <header>
   <nav>
-    <a href="#top" class="logo"><img src="assets/images/logo-icon.png" alt="EnergyAlly icon" class="logo-icon">EnergyAlly</a>
+    <a href="#top" class="logo" aria-label="energyally — One platform. Every energy.">
+      <img src="assets/images/logo-mark.png" alt="" class="logo-icon">
+      <span class="brand-copy">
+        <span class="brand-name"><span>energy</span>ally</span>
+        <span class="brand-tagline">One platform. Every energy.</span>
+      </span>
+    </a>
     <div class="navlinks">
       <a href="#solution">Solution</a>
       <a href="#manifest">Ops Live</a>
@@ -41,6 +47,10 @@
       <a href="#contact">Contact</a>
     </div>
     <div class="navcta">
+      <button class="theme-toggle" type="button" aria-label="Switch to dark theme" aria-pressed="false">
+        <svg class="theme-icon theme-icon-moon" viewBox="0 0 24 24" aria-hidden="true"><path d="M20.6 15.7A9 9 0 0 1 8.3 3.4 9 9 0 1 0 20.6 15.7Z"/></svg>
+        <svg class="theme-icon theme-icon-sun" viewBox="0 0 24 24" aria-hidden="true"><circle cx="12" cy="12" r="4"/><path d="M12 2v2M12 20v2M4.93 4.93l1.42 1.42M17.66 17.66l1.41 1.41M2 12h2M20 12h2M4.93 19.07l1.42-1.42M17.66 6.34l1.41-1.41"/></svg>
+      </button>
       <a href="#contact" class="btn btn-amber">Book a demo</a>
     </div>
   </nav>
@@ -426,75 +436,64 @@
     </div>
   </section>
 
-  <!-- CONTACT -->
-  <section class="contact-section on-light" id="contact" style="background:var(--panel-2); color:var(--white);">
+  <!-- PURPOSE -->
+  <section class="purpose-section" id="purpose">
     <div class="wrap">
-      <div class="section-head" style="color:var(--white);">
-        <p class="eyebrow">Contact</p>
-        <h2 style="color:var(--white);">Schedule your walkthrough</h2>
+      <div class="section-head">
+        <p class="eyebrow">What guides us</p>
+        <h2>Built with purpose</h2>
+        <p>Energy distribution works best when every person, process, and decision moves from the same reliable source of truth.</p>
       </div>
-      <div class="contact-grid">
-        <div>
-          <div class="contact-item">
-            <span>Phone</span>
-            <strong><a href="tel:+919500806995">+91 95008 06995</a></strong>
-          </div>
-          <div class="contact-item">
-            <span>Email</span>
-            <strong><a href="mailto:sales@energyally.in">sales@energyally.in</a></strong>
-          </div>
-          <div class="contact-item">
-            <span>Address</span>
-            <strong>14, Bay View Street, Sholinganallur, Chennai 600119</strong>
-          </div>
-          <div class="contact-item">
-            <span>Working hours</span>
-            <strong>Monday to Saturday, 9:00 AM – 7:00 PM IST</strong>
-          </div>
-
-          <div class="contact-item">
-            <span>Follow EnergyAlly</span>
-            <div class="social-links">
-              <a href="https://facebook.com/energyally" aria-label="EnergyAlly on Facebook" target="_blank" rel="noopener">
-                <svg width="17" height="17" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M14 9h3V5h-3c-2.2 0-4 1.8-4 4v3H7v4h3v7h4v-7h3l1-4h-4V9c0-.6.4-1 1-1z"/></svg>
-              </a>
-              <a href="https://instagram.com/energyally" aria-label="EnergyAlly on Instagram" target="_blank" rel="noopener">
-                <svg width="17" height="17" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="3" y="3" width="18" height="18" rx="5"/><circle cx="12" cy="12" r="4"/><circle cx="17.5" cy="6.5" r="1" fill="currentColor" stroke="none"/></svg>
-              </a>
-              <a href="https://linkedin.com/company/energyally" aria-label="EnergyAlly on LinkedIn" target="_blank" rel="noopener">
-                <svg width="17" height="17" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="3" y="3" width="18" height="18" rx="2"/><line x1="8" y1="11" x2="8" y2="16"/><circle cx="8" cy="7.5" r="1" fill="currentColor" stroke="none"/><path d="M12 16v-3.2c0-1.5 1-2.3 2.2-2.3s1.8.8 1.8 2.3V16"/></svg>
-              </a>
-              <a href="https://x.com/energyally" aria-label="EnergyAlly on X" target="_blank" rel="noopener">
-                <svg width="15" height="15" viewBox="0 0 24 24" fill="currentColor" stroke="none"><path d="M18.9 2H22l-7.6 8.7L23.3 22h-7.1l-5.5-7.2L4.3 22H1.2l8.1-9.3L1 2h7.3l5 6.6L18.9 2zm-1.2 18h1.9L7.4 4H5.4l12.3 16z"/></svg>
-              </a>
-            </div>
-          </div>
-        </div>
-
-        <form class="demo-form" onsubmit="event.preventDefault(); this.querySelector('button').textContent='Request sent';">
-          <h3>Book your demo</h3>
-          <input type="text" placeholder="Full name" required>
-          <div class="form-row">
-            <input type="tel" placeholder="Business phone">
-            <input type="email" placeholder="Work email">
-          </div>
-          <div class="form-row">
-            <select>
-              <option>LPG</option>
-              <option>Petroleum</option>
-              <option>Solar</option>
-              <option>Water</option>
-            </select>
-            <input type="text" placeholder="Team size">
-          </div>
-          <textarea rows="3" placeholder="Notes"></textarea>
-          <button type="submit" class="btn btn-amber">Submit demo request</button>
-        </form>
+      <div class="purpose-grid">
+        <article class="purpose-card reveal"><span class="purpose-index">01</span><h3>Our Mission</h3><p>To simplify energy distribution with one dependable platform that gives teams clarity, control, and more time to serve their customers.</p></article>
+        <article class="purpose-card reveal"><span class="purpose-index">02</span><h3>Our Vision</h3><p>To make intelligent, connected operations accessible to every energy distributor—across every location, vertical, and stage of growth.</p></article>
+        <article class="purpose-card reveal"><span class="purpose-index">03</span><h3>Our Values</h3><p>Accountability in every record, empathy for the people doing the work, and practical innovation that earns trust every day.</p></article>
       </div>
     </div>
   </section>
 
-  <footer>EnergyAlly — Your Operational Partner. © 2026.</footer>
+  <!-- CONTACT -->
+  <section class="contact-section" id="contact">
+    <div class="wrap contact-wrap">
+      <div class="section-head contact-heading">
+        <p class="eyebrow">Let’s talk</p>
+        <h2>Schedule your walkthrough</h2>
+        <p>Tell us a little about your operation and we’ll show you how EnergyAlly fits your day-to-day workflow.</p>
+      </div>
+      <form class="demo-form reveal" onsubmit="event.preventDefault(); this.querySelector('button').textContent='Request sent';">
+        <h3>Book your demo</h3>
+        <input type="text" placeholder="Full name" aria-label="Full name" required>
+        <div class="form-row"><input type="tel" placeholder="Business phone" aria-label="Business phone"><input type="email" placeholder="Work email" aria-label="Work email"></div>
+        <div class="form-row">
+          <select aria-label="Energy vertical"><option>LPG</option><option>Petroleum</option><option>Solar</option><option>Water</option></select>
+          <input type="text" placeholder="Team size" aria-label="Team size">
+        </div>
+        <textarea rows="3" placeholder="What would you like to improve?" aria-label="What would you like to improve?"></textarea>
+        <button type="submit" class="btn btn-amber">Submit demo request</button>
+      </form>
+    </div>
+  </section>
+
+  <footer class="site-footer">
+    <div class="wrap footer-grid">
+      <div class="footer-brand">
+        <a href="#top" class="footer-logo" aria-label="energyally home"><img src="assets/images/logo-mark.png" alt="" aria-hidden="true"><span><strong><span>energy</span>ally</strong><small>One platform. Every energy.</small></span></a>
+        <p>One role-aware platform for stock, delivery, sales, teams, and customer service across modern energy distribution.</p>
+      </div>
+      <div class="footer-column"><h3>Quick links</h3><a href="#solution">Solution</a><a href="#manifest">Ops Live</a><a href="#modules">Modules</a><a href="#verticals">Verticals</a><a href="#pricing">Pricing</a></div>
+      <div class="footer-column footer-contact"><h3>Contact</h3><a href="tel:+919500806995">+91 95008 06995</a><a href="mailto:sales@energyally.in">sales@energyally.in</a><p>14, Bay View Street,<br>Sholinganallur, Chennai 600119</p><p>Mon–Sat · 9:00 AM–7:00 PM IST</p></div>
+      <div class="footer-column">
+        <h3>Follow us</h3>
+        <div class="social-links">
+          <a href="https://facebook.com/energyally" aria-label="EnergyAlly on Facebook" target="_blank" rel="noopener"><svg width="17" height="17" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M14 9h3V5h-3c-2.2 0-4 1.8-4 4v3H7v4h3v7h4v-7h3l1-4h-4V9c0-.6.4-1 1-1z"/></svg></a>
+          <a href="https://instagram.com/energyally" aria-label="EnergyAlly on Instagram" target="_blank" rel="noopener"><svg width="17" height="17" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="3" y="3" width="18" height="18" rx="5"/><circle cx="12" cy="12" r="4"/><circle cx="17.5" cy="6.5" r="1" fill="currentColor" stroke="none"/></svg></a>
+          <a href="https://linkedin.com/company/energyally" aria-label="EnergyAlly on LinkedIn" target="_blank" rel="noopener"><svg width="17" height="17" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="3" y="3" width="18" height="18" rx="2"/><line x1="8" y1="11" x2="8" y2="16"/><circle cx="8" cy="7.5" r="1" fill="currentColor" stroke="none"/><path d="M12 16v-3.2c0-1.5 1-2.3 2.2-2.3s1.8.8 1.8 2.3V16"/></svg></a>
+          <a href="https://x.com/energyally" aria-label="EnergyAlly on X" target="_blank" rel="noopener"><svg width="15" height="15" viewBox="0 0 24 24" fill="currentColor" stroke="none"><path d="M18.9 2H22l-7.6 8.7L23.3 22h-7.1l-5.5-7.2L4.3 22H1.2l8.1-9.3L1 2h7.3l5 6.6L18.9 2zm-1.2 18h1.9L7.4 4H5.4l12.3 16z"/></svg></a>
+        </div>
+      </div>
+    </div>
+    <div class="wrap footer-bottom">© 2026 energyally. All rights reserved.</div>
+  </footer>
 
 </main>
 
