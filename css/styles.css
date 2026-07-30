@@ -395,6 +395,10 @@
   }
   .demo-form input::placeholder, .demo-form textarea::placeholder{color:var(--steel-dim);}
   .demo-form button{width:100%; justify-content:center;}
+  .demo-form button[disabled]{opacity:.65; cursor:progress;}
+  .form-status{margin-top:14px; font-size:14px; text-align:center; color:var(--steel-dim);}
+  .form-status[data-state="success"]{color:var(--amber);}
+  .form-status[data-state="error"]{color:#E5736B;}
 
   @media (max-width:560px){.demo-form{padding:26px 20px;}}
 

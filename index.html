@@ -460,16 +460,17 @@
         <h2>Schedule your walkthrough</h2>
         <p>Tell us a little about your operation and we’ll show you how EnergyAlly fits your day-to-day workflow.</p>
       </div>
-      <form class="demo-form reveal" onsubmit="event.preventDefault(); this.querySelector('button').textContent='Request sent';">
+      <form class="demo-form reveal" id="demo-form" novalidate>
         <h3>Book your demo</h3>
-        <input type="text" placeholder="Full name" aria-label="Full name" required>
-        <div class="form-row"><input type="tel" placeholder="Business phone" aria-label="Business phone"><input type="email" placeholder="Work email" aria-label="Work email"></div>
+        <input type="text" id="demo-name" name="name" placeholder="Full name" aria-label="Full name" required>
+        <div class="form-row"><input type="tel" id="demo-phone" name="phone" placeholder="Business phone" aria-label="Business phone"><input type="email" id="demo-email" name="email" placeholder="Work email" aria-label="Work email"></div>
         <div class="form-row">
-          <select aria-label="Energy vertical"><option>LPG</option><option>Petroleum</option><option>Solar</option><option>Water</option></select>
-          <input type="text" placeholder="Team size" aria-label="Team size">
+          <select id="demo-sector" name="sector" aria-label="Energy vertical"><option>LPG</option><option>Petroleum</option><option>Solar</option><option>Water</option></select>
+          <input type="text" id="demo-team-size" name="teamSize" placeholder="Team size" aria-label="Team size">
         </div>
-        <textarea rows="3" placeholder="What would you like to improve?" aria-label="What would you like to improve?"></textarea>
+        <textarea id="demo-notes" name="notes" rows="3" placeholder="What would you like to improve?" aria-label="What would you like to improve?"></textarea>
         <button type="submit" class="btn btn-amber">Submit demo request</button>
+        <p class="form-status" id="demo-status" role="status" aria-live="polite" hidden></p>
       </form>
     </div>
   </section>
