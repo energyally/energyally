@@ -136,7 +136,7 @@
   // which appends the row to the "Leads" Google Sheet (Excel on Drive)
   // and emails the EnergyAlly inboxes. Set DEMO_ENDPOINT to the deployed
   // Apps Script web app URL (see google-apps-script-leads.gs).
-  const DEMO_ENDPOINT = 'https://script.google.com/macros/s/REPLACE_WITH_YOUR_DEPLOYMENT_ID/exec';
+  const DEMO_ENDPOINT = 'https://script.google.com/macros/s/AKfycbzE-bGp6TpHnUHdaaIe0MlZycJct5LVePIGh7rcV7EkIYm1Fl7k8sFO4E8DAhjcC3_Bbw/exec';
   const demoForm = document.getElementById('demo-form');
   if(demoForm){
     const statusEl = document.getElementById('demo-status');
