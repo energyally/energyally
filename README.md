@@ -24,7 +24,10 @@ energyally-website/
 │   └── styles.css              # All styling
 ├── js/
 │   └── main.js                 # Scrollspy, reveal animations, gauges,
-│                                # ledger counters, vertical switcher, pricing toggle
+│                                # ledger counters, vertical switcher, pricing
+│                                # toggle, and demo-form submission
+├── google-apps-script-leads.gs # Apps Script web app: saves leads to a Google
+│                                # Sheet and emails the EnergyAlly inboxes
 ├── assets/
 │   ├── images/
 │   │   ├── logo.png            # Full logo lockup (icon + wordmark + tagline)
@@ -70,8 +73,14 @@ Loaded from Google Fonts:
 
 ## Notes
 
-- The demo request form in the Contact section is front-end only; wire the
-  `<form>` in `index.html` up to your backend or a form service (e.g. Formspree)
-  to actually receive submissions.
+- The demo request form in the Contact section posts to a Google Apps Script
+  web app (`google-apps-script-leads.gs`), which appends each lead to a "Leads"
+  Google Sheet on Drive and emails the EnergyAlly inboxes
+  (`tech.energyally@gmail.com` and `contact@energyally.in`). To enable it:
+  1. Open the target Google Sheet → **Extensions → Apps Script**, paste the
+     contents of `google-apps-script-leads.gs`, and **Deploy → New deployment →
+     Web app** (execute as *Me*, access *Anyone*).
+  2. Copy the resulting `/exec` web app URL into the `DEMO_ENDPOINT` constant in
+     `js/main.js`.
 - Testimonials and social links use placeholder content/URLs — replace with
   real ones in `index.html` before shipping.

@@ -131,3 +131,58 @@
       });
     });
   });
+
+  // Demo request form — send leads to the Google Apps Script web app,
+  // which appends the row to the "Leads" Google Sheet (Excel on Drive)
+  // and emails the EnergyAlly inboxes. Set DEMO_ENDPOINT to the deployed
+  // Apps Script web app URL (see google-apps-script-leads.gs).
+  const DEMO_ENDPOINT = 'https://script.google.com/macros/s/REPLACE_WITH_YOUR_DEPLOYMENT_ID/exec';
+  const demoForm = document.getElementById('demo-form');
+  if(demoForm){
+    const statusEl = document.getElementById('demo-status');
+    const submitBtn = demoForm.querySelector('button[type="submit"]');
+    const submitLabel = submitBtn ? submitBtn.textContent : '';
+
+    function setStatus(message, state){
+      if(!statusEl) return;
+      statusEl.textContent = message;
+      statusEl.dataset.state = state || '';
+      statusEl.hidden = !message;
+    }
+
+    demoForm.addEventListener('submit', async (event)=>{
+      event.preventDefault();
+      if(!demoForm.reportValidity()) return;
+
+      const payload = {
+        name: (document.getElementById('demo-name').value || '').trim(),
+        phone: (document.getElementById('demo-phone').value || '').trim(),
+        email: (document.getElementById('demo-email').value || '').trim(),
+        sector: document.getElementById('demo-sector').value || '',
+        teamSize: (document.getElementById('demo-team-size').value || '').trim(),
+        notes: (document.getElementById('demo-notes').value || '').trim(),
+        source: 'energyally-website',
+        requestedAt: new Date().toISOString()
+      };
+
+      if(submitBtn){ submitBtn.disabled = true; submitBtn.textContent = 'Sending…'; }
+      setStatus('Sending your request…', 'pending');
+
+      try{
+        // Apps Script web apps don't return CORS headers, so we post as a
+        // "simple request" (text/plain) and don't read the response body.
+        await fetch(DEMO_ENDPOINT, {
+          method: 'POST',
+          mode: 'no-cors',
+          headers: { 'Content-Type': 'text/plain;charset=utf-8' },
+          body: JSON.stringify(payload)
+        });
+        demoForm.reset();
+        setStatus('Thanks! Your demo request has been sent — we\u2019ll be in touch shortly.', 'success');
+        if(submitBtn){ submitBtn.textContent = 'Request sent'; }
+      }catch(err){
+        setStatus('Sorry, something went wrong. Please email sales@energyally.in or try again.', 'error');
+        if(submitBtn){ submitBtn.disabled = false; submitBtn.textContent = submitLabel; }
+      }
+    });
+  }
