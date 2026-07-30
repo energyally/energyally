@@ -75,12 +75,10 @@ Loaded from Google Fonts:
 
 - The demo request form in the Contact section posts to a Google Apps Script
   web app (`google-apps-script-leads.gs`), which appends each lead to a "Leads"
-  Google Sheet on Drive and emails the EnergyAlly inboxes
-  (`tech.energyally@gmail.com` and `contact@energyally.in`). To enable it:
-  1. Open the target Google Sheet → **Extensions → Apps Script**, paste the
-     contents of `google-apps-script-leads.gs`, and **Deploy → New deployment →
-     Web app** (execute as *Me*, access *Anyone*).
-  2. Copy the resulting `/exec` web app URL into the `DEMO_ENDPOINT` constant in
-     `js/main.js`.
+  Google Sheet on Drive and emails the EnergyAlly inbox
+  (`tech.energyally@gmail.com`). To enable it, paste your existing deployed
+  Apps Script `/exec` web app URL into the `DEMO_ENDPOINT` constant in
+  `js/main.js` (Apps Script project → **Deploy → Manage deployments** → copy
+  the Web app URL). No redeployment is required.
 - Testimonials and social links use placeholder content/URLs — replace with
   real ones in `index.html` before shipping.

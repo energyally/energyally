@@ -1,6 +1,5 @@
 const SHEET_NAME = "Leads";
-// Notify both the internal tech inbox and the public contact inbox.
-const NOTIFY_EMAIL = "tech.energyally@gmail.com,contact@energyally.in";
+const NOTIFY_EMAIL = "tech.energyally@gmail.com";
 
 function doPost(e) {
   try {
