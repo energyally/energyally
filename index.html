@@ -318,7 +318,10 @@ header.nav{position:sticky;top:0;z-index:50;transition:all .3s}
 .cline a:hover{color:var(--brand-deep)}
 
 /* FOOTER */
-footer{background:var(--ink);color:#C9DBDF;padding:64px 0 30px;margin-top:40px}
+/* Keep the footer dark in both themes. `--ink` becomes a light foreground
+   colour in dark mode, so it must not be used as the footer background. */
+footer{background:#0B1F24;color:#C9DBDF;padding:64px 0 30px;margin-top:40px}
+html[data-theme=dark] footer{background:#07131B;border-top:1px solid rgba(201,219,223,.14)}
 .foot-grid{display:grid;grid-template-columns:2fr 1fr 1fr 1fr;gap:40px}
 @media(max-width:860px){.foot-grid{grid-template-columns:1fr 1fr;gap:32px}}
 @media(max-width:520px){.foot-grid{grid-template-columns:1fr}}
